@@ -1,9 +1,8 @@
 import subprocess
 import click
-import sys
 from typing import List, Tuple, Dict
 
-from translation import TRANSLATION
+from kubectlfr.translation import TRANSLATION
 
 
 def translate(args: List[str], translation: Dict[str, str]) -> List[str]:
@@ -24,7 +23,7 @@ def run_kubectl(args: List[str]) -> Tuple[str, int]:
     return cmd_exec.stdout.decode("utf-8") + cmd_exec.stderr.decode("utf-8"), cmd_exec.returncode
 
 
-@click.command(name="kubectlfr")
+@click.command()
 @click.argument("args", nargs=-1)
 def kubectlfr(args: List[str]) -> None:
 
@@ -33,7 +32,3 @@ def kubectlfr(args: List[str]) -> None:
 
     print(output)
     exit(return_code)
-
-
-if __name__ == '__main__':
-    kubectlfr(sys.argv[2:])
