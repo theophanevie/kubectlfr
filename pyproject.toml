@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kubectlfr"
-version = "1.0.0"
+version = "1.0.1"
 description = "Utilitaire de contrôle de Kubernetes"
 authors = ["Théophane Vié <theophane.vie@petit-nuage.org>"]
 license = "MIT"
