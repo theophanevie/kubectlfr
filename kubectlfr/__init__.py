@@ -3,5 +3,5 @@ import sys
 from kubectlfr.main import kubectlfr
 
 
-def main():
+def main() -> None:
     kubectlfr(sys.argv[1:])
