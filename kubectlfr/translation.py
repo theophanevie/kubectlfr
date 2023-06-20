@@ -11,7 +11,7 @@ TRANSLATION = {
     "démarer": "run",
     "mettre-en-place": "set",
     "expliquer": "explain",
-    "retour-en-arrière": "rollout",
+    "déployer": "rollout",
     "mise-à-niveau": "scale",
     "mise-à-niveau-automatique": "autoscale",
     "certifier": "certificate",
